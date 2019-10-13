@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Stock Charts</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <!-- PLotly.js library -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+​
+<body>
+    <div class="container">
+        <div class="jumbotron" style="text-align: center">
+            <h1 class="title">
+                <span class="text-wrapper">
+                  <span class="letters">Stock Charting Platform</span>
+                </span>
+              </h1>
+              <!-- Anime.js library for text effects -->
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        </div>
+    </div>
+  <form class="form-inline">
+    <div class="form-group">
+      <label for="stockInput"></label>
+      <input type="text" class="form-control" id="stockInput" placeholder="Enter a stock">
+    </div>
+    <button id="submit" type="submit" class="btn btn-success">
+      <span class="word">Plot</span>
+      <span class="word">Stock</span></button>
+  </form>
+</br>
+  <div id="plot"></div>
+  <script src="../static/js/plots.js"></script>
+</body>
+
+</html>
